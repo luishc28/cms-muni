@@ -1,0 +1,62 @@
+/* Estilos para Sociales */
+
+.rt-social-buttons {
+    right: 0;
+    width: 45px;
+    position: fixed;
+    top: 200px;
+    z-index: 10;
+}
+
+.rt-social-buttons .rt-social-text {
+    display:none;
+    margin: 11px 0 11px 32px;
+    white-space:nowrap;
+    font-family: times;
+    font-size: 14px;
+    margin-left: 38px;
+    color: #fff;
+}
+
+.rt-social-buttons #rt-facebook-btn span { background-position: 12px 10px; }
+.rt-social-buttons #rt-twitter-btn span { background-position: 11px -35px; }
+.rt-social-buttons #rt-google-btn span { background-position: 10px -127px; }
+.rt-social-buttons #rt-youtube-btn span { background-position: 11px -167px; }
+.rt-social-buttons #rt-instagram-btn span { background-position: 11px -257px; }
+
+
+.rt-social-buttons #rt-twitter-btn .rt-social-icon, .rt-social-buttons #rt-facebook-btn .rt-social-icon, .rt-social-buttons #rt-google-btn .rt-social-icon, .rt-social-buttons #rt-instagram-btn .rt-social-icon, .rt-social-buttons #rt-flickr-btn .rt-social-icon, .rt-social-buttons #rt-youtube-btn .rt-social-icon, .rt-social-buttons #rt-rss-btn .rt-social-icon {
+    background-color: #33353B;
+    background-image: url(../img/social-icons.png);
+}
+
+.rt-social-buttons .rt-social-icon {
+    height: 43px;
+    width: 43px;
+    float: right;
+    display: block;
+    background-repeat: no-repeat;
+    margin-bottom: 2px;
+    transition: width 0.2s ease-in, background-color 0.2s ease-in;
+}
+
+.rt-social-buttons .rt-social-icon:hover {
+    width:170px;
+}
+
+.rt-social-buttons a:hover > span {
+    width:auto;
+}
+
+.rt-social-buttons a:hover .rt-social-text {
+    display:block; 
+}
+
+.rt-social-buttons #rt-facebook-btn .rt-social-icon:hover { background-color: #3e5c9a; }
+.rt-social-buttons #rt-twitter-btn .rt-social-icon:hover { background-color: #1da1f2; }
+.rt-social-buttons #rt-google-btn .rt-social-icon:hover { background-color: #d94a38; }
+.rt-social-buttons #rt-youtube-btn .rt-social-icon:hover { background-color: #cc181e; }
+.rt-social-buttons #rt-instagram-btn .rt-social-icon:hover { background-color: #3e5c9a; }
+
+
+
