@@ -1,0 +1,32 @@
+#Activamos la reescritura SI SOLO SI el mod_rewrite se encuentra activado, así se evitan errores 500
+<IfModule mod_rewrite.c>
+
+    # Suponiendo que el listado de directorios esté desactivado, permitimos indexación y activamos el rewrite
+    Options +FollowSymLinks -Indexes
+    RewriteEngine on
+
+    # Usualmente "AllowOverride" debería estar en 'All' en el apache.conf/vhost.conf, pero si no descomentas lo siguiente para evitar un error 404
+    #AllowOverride All
+
+    # Se supone que la regla aplica desde el directorio donde se encuentra el .htaccess pero si es necesario lo especificas, siendo / la raiz de dominio
+    #RewriteBase /
+
+    # con esta instrucción bloqueamos el acceso a la carpeta system, si es que se encuentra en el directorio web
+    RedirectMatch 403 ^/(system).*$
+
+    # Antes de redireccionar, se verifica que la petición no sea a un directorio o archivo existente
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    
+    RewriteCond  $1 !^(index.php|addons)
+
+    # Si el archivo/directorio no existe, redireccionamos
+    RewriteRule ^(.*)$ /cms-muni/index.php/$1 [L]
+</IfModule>
+
+<IfModule mod_headers.c>
+    <FilesMatch "\.(appcache|crx|css|eot|gif|htc|ico|jpe?g|js|m4a|m4v|manifest|mp4|oex|oga|ogg|ogv|otf|pdf|png|safariextz|svg|svgz|ttf|vcf|webm|webp|woff|woff2|xml|xpi)$">
+    Header unset X-UA-Compatible
+    Header set Access-Control-Allow-Origin "*"
+    </FilesMatch>
+</IfModule>
