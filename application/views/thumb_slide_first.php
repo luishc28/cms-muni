@@ -3,42 +3,19 @@
                 <div class="carousel-inner">
                     <div class="item active">
                         <div class="row">
-                            <div class="col-sm-3 col-xs-3">
-                                <a href="#x">
-                                    <img src="<?php echo base_url();?>addons/img/icon-thumb2/b2-defensacivilnv.png" class="img-responsive">
-                                </a>
-                            </div>
-                            <div class="col-sm-3 col-xs-3">
-                                <a href="#x">
-                                    <img src="<?php echo base_url();?>addons/img/icon-thumb2/b2-eventosespectaculosnv.png" alt="Image" class="img-responsive">
-                                </a>
-                            </div>
-                            <div class="col-sm-3 col-xs-3">
-                                <a href="#x">
-                                    <img src="<?php echo base_url();?>addons/img/icon-thumb2/b2-licconnv.png" alt="Image" class="img-responsive">
-                                </a>
-                            </div>
-                            <div class="col-sm-3 col-xs-3">
-                                <a href="#x">
-                                    <img src="<?php echo base_url();?>addons/img/icon-thumb2/b2-lifun_0.png" alt="Image" class="img-responsive">
-                                </a>
-                            </div>
+                        <?php foreach ($thumb_horizontal as $i => $thumb1) { ?>
+                        <?php   if (($i > 0) && ($i % 4 == 0)) { ?>
                         </div>
-                        <!--/row-->
                     </div>
-                    <!--/item-->
                     <div class="item">
                         <div class="row">
+                        <?php } ?>
                             <div class="col-sm-3 col-xs-3">
-                                <a href="#x">
-                                    <img src="<?php echo base_url();?>addons/img/icon-thumb2/b2-registrocivilnv.png" alt="Image" class="img-responsive">
+                                <a class="thumbnail" href="#x">                            
+                                <img src="<?php echo base_url();?>addons/img/icon-thumb2/<?php echo $thumb1->nombre_fotos; ?>" class="img-thumbnail">   
                                 </a>
                             </div>
-                            <div class="col-sm-3 col-xs-3">
-                                <a href="#x">
-                                    <img src="<?php echo base_url();?>addons/img/icon-thumb2/b2-tributosmunicipalesnv.png" alt="Image" class="img-responsive">
-                                </a>
-                            </div>                            
+                        <?php } ?>    
                         </div>
                         <!--/row-->
                     </div>

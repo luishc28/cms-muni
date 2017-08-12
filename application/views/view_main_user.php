@@ -29,7 +29,12 @@
 				<div class="col-md-3 col-sm-12 col-xs-12 pan2">
 					<div class="well">
 						<center>
-							<img class="img-responsive foto_alcalde" src="<?php echo base_url();?>addons/img/fotos/alcalde.jpg">
+							<?php foreach ($alcalde as $alc) {
+							?>
+								<img class="img-responsive foto_alcalde" src="<?php echo base_url();?>addons/img/fotos/<?php echo $alc->nombre_fotos; ?>">
+							<?php
+							}
+							?>
 						</center>
 					</div>
 				</div>

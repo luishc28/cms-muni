@@ -3,48 +3,19 @@
                 <div class="carousel-inner">
                     <div class="item active">
                         <div class="row">
-                            <div class="col-md-12">
-                                <a class="thumbnail" href="#x">
-                                    <img src="<?php echo base_url();?>addons/img/icon-thumb1/la-boton01.png" class="img-responsive">
-                                </a>
-                            </div>
+                            <?php foreach ($thumb_vertical as $i => $thumb2) { ?>
+                            <?php   if (($i > 0) && ($i % 4 == 0)) { ?>                        
                           </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <a class="thumbnail" href="#x">
-                                    <img src="<?php echo base_url();?>addons/img/icon-thumb1/la-boton02.png" alt="Image" class="img-responsive">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <a class="thumbnail" href="#x">
-                                    <img src="<?php echo base_url();?>addons/img/icon-thumb1/la-boton03.png" alt="Image" class="img-responsive">
-                                </a>
-                            </div>
-                        </div>                        
                     </div>
                     <div class="item">
                         <div class="row">
+                        <?php } ?>
                              <div class="col-md-12">
                                 <a class="thumbnail" href="#x">
-                                    <img src="<?php echo base_url();?>addons/img/icon-thumb1/la_boton04.png" alt="Image" class="img-responsive">
+                                <img src="<?php echo base_url();?>addons/img/icon-thumb1/<?php echo $thumb2->nombre_fotos; ?>" class="img-thumbnail">  
                                 </a>
-                            </div>                            
-                        </div>
-                        <div class="row">
-                             <div class="col-md-12">
-                                <a class="thumbnail" href="#x">
-                                    <img src="<?php echo base_url();?>addons/img/icon-thumb1/la_boton05.png" alt="Image" class="img-responsive">
-                                </a>
-                            </div>                            
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <a class="thumbnail" href="#x">
-                                    <img src="<?php echo base_url();?>addons/img/icon-thumb1/la_boton06.png" alt="Image" class="img-responsive">
-                                </a>
-                            </div>
+                            </div>   
+                        <?php } ?>                              
                         </div>                        
                     </div>
                 </div>

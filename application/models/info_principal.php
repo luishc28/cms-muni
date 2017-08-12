@@ -14,6 +14,22 @@ class Info_principal extends CI_Model {
 		return $query->result();
 	}
 
+	public function alcalde(){
+		return $this->db->where('tipo_fotos','2')->where('estado_fotos','1')->get('fotos')->result();
+	}
+
+	public function slider(){
+		return $this->db->where('tipo_fotos','1')->where('estado_fotos','1')->get('fotos')->result();
+	}
+
+	public function thumbnail_horizontal(){
+		return $this->db->where('tipo_fotos','3')->where('estado_fotos','1')->get('fotos')->result();	
+	}
+
+	public function thumbnail_vertical(){
+		return $this->db->where('tipo_fotos','4')->where('estado_fotos','1')->get('fotos')->result();	
+	}	
+
 }
 
 ?>
