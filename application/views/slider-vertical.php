@@ -12,7 +12,7 @@
                         <?php } ?>
                              <div class="col-md-12">
                                 <a class="thumbnail" href="#x">
-                                <img src="<?php echo base_url();?>addons/img/icon-thumb1/<?php echo $thumb2->nombre_fotos; ?>" class="img-thumbnail">  
+                                <img src="<?php echo base_url();?>addons/img/fotos/<?php echo $thumb2->nombre_fotos; ?>" class="img-thumbnail">  
                                 </a>
                             </div>   
                         <?php } ?>                              

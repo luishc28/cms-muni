@@ -10,11 +10,5 @@
 
 	</div>
 
-	<script src="<?php echo base_url(); ?>/addons/administrador/js/jquery.min.js"></script>
-	<script src="<?php echo base_url(); ?>/addons/js/bootstrap.min.js"></script>
-	<script src="<?php echo base_url(); ?>/addons/administrador/js/fastclick.js"></script>
-	<script src="<?php echo base_url(); ?>/addons/administrador/dist/js/adminlte.min.js"></script>
-	<script src="<?php echo base_url(); ?>/addons/administrador/dist/js/demo.js"></script>
-
 </body>
 </html>

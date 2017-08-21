@@ -13,6 +13,8 @@ class Main_user extends CI_Controller {
 		$data['thumb_horizontal'] = $this->info_principal->thumbnail_horizontal();
 		$data['thumb_vertical'] = $this->info_principal->thumbnail_vertical();
 		$data['alcalde'] = $this->info_principal->alcalde();
+		$data['social'] = $this->info_principal->social();
+		$data['icon'] = $this->info_principal->icon_contact();
 
 		$this->load->view('view_main_user',$data);
 	}

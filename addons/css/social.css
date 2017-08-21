@@ -23,6 +23,7 @@
 .rt-social-buttons #rt-google-btn span { background-position: 10px -127px; }
 .rt-social-buttons #rt-youtube-btn span { background-position: 11px -167px; }
 .rt-social-buttons #rt-instagram-btn span { background-position: 11px -257px; }
+.rt-social-buttons #rt-rss-btn span { background-position: 10px -80px; }
 
 
 .rt-social-buttons #rt-twitter-btn .rt-social-icon, .rt-social-buttons #rt-facebook-btn .rt-social-icon, .rt-social-buttons #rt-google-btn .rt-social-icon, .rt-social-buttons #rt-instagram-btn .rt-social-icon, .rt-social-buttons #rt-flickr-btn .rt-social-icon, .rt-social-buttons #rt-youtube-btn .rt-social-icon, .rt-social-buttons #rt-rss-btn .rt-social-icon {
@@ -57,6 +58,7 @@
 .rt-social-buttons #rt-google-btn .rt-social-icon:hover { background-color: #d94a38; }
 .rt-social-buttons #rt-youtube-btn .rt-social-icon:hover { background-color: #cc181e; }
 .rt-social-buttons #rt-instagram-btn .rt-social-icon:hover { background-color: #3e5c9a; }
+.rt-social-buttons #rt-rss-btn .rt-social-icon:hover { background-color: #9a903e; }
 
 
 

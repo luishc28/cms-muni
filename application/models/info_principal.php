@@ -15,20 +15,28 @@ class Info_principal extends CI_Model {
 	}
 
 	public function alcalde(){
-		return $this->db->where('tipo_fotos','2')->where('estado_fotos','1')->get('fotos')->result();
+		return $this->db->where('tipo_fotos','Alcalde')->where('estado_fotos','1')->get('fotos')->result();
 	}
 
 	public function slider(){
-		return $this->db->where('tipo_fotos','1')->where('estado_fotos','1')->get('fotos')->result();
+		return $this->db->where('tipo_fotos','Principal')->where('estado_fotos','1')->get('fotos')->result();
 	}
 
 	public function thumbnail_horizontal(){
-		return $this->db->where('tipo_fotos','3')->where('estado_fotos','1')->get('fotos')->result();	
+		return $this->db->where('tipo_fotos','Horizontal')->where('estado_fotos','1')->get('fotos')->result();	
 	}
 
 	public function thumbnail_vertical(){
-		return $this->db->where('tipo_fotos','4')->where('estado_fotos','1')->get('fotos')->result();	
-	}	
+		return $this->db->where('tipo_fotos','Vertical')->where('estado_fotos','1')->get('fotos')->result();	
+	}
+
+	public function icon_contact(){
+		return $this->db->where('tipo_fotos','Iconos-Superior')->where('estado_fotos','1')->get('fotos')->result();	
+	}		
+
+	public function social(){
+		return $this->db->where('estado_social','1')->get('sociales')->result();
+	}
 
 }
 

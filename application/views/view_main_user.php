@@ -23,7 +23,7 @@
 		<div class="container-fluid contenido">			
 				<div class="col-md-9 col-sm-12 col-xs-12 pan1">
 					<div class="well">
-					<?php include_once 'first-slider.php' ;?>
+					<?php include_once 'slider-principal.php' ;?>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-12 col-xs-12 pan2">
@@ -40,7 +40,7 @@
 				</div>
 				<div class="col-md-9 col-sm-12 col-xs-12 pan3">
 					<div class="well">
-					<?php include_once 'thumb_slide_first.php' ;?>
+					<?php include_once 'slider-horizontal.php' ;?>
 					</div>				
 				</div>
 				<div class="col-md-3 col-sm-12 col-xs-12 pan4">
@@ -57,7 +57,7 @@
 				</div>
 				<div class="col-md-3 col-sm-12 col-xs-12 pan6">
 					<div class="well">
-					<?php include_once 'thumb_slide_second.php' ;?>
+					<?php include_once 'slider-vertical.php' ;?>
 					</div>
 				</div>				
 		</div>

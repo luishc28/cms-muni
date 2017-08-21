@@ -16,46 +16,20 @@
 
 			    <!-- sidebar menu: : style can be found in sidebar.less -->
 			    <ul class="sidebar-menu" data-widget="tree">
-		        	<li class="header">MAIN NAVIGATION</li>
+		        	<li class="header">MENU</li>
 		        	<li class="treeview">
 				        <a href="#">
 				            <i class="fa fa-dashboard"></i>
-				            <span>Dashboard</span>
+				            <span>Menu Navegación</span>
 				            <span class="pull-right-container">
 				              <i class="fa fa-angle-left pull-right"></i>
 				            </span>
 				        </a>
 			          	<ul class="treeview-menu">
-				            <li><a href="#"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-				            <li><a href="#"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+				            <li><a href="<?php echo base_url()?>Admin/Aseccion"><i class="fa fa-circle-o"></i> Sección</a></li>
+				            <li><a href="<?php echo base_url()?>Admin/Acategoria"><i class="fa fa-circle-o"></i> Categoría</a></li>
 			          	</ul>
 		        	</li>
-			        <li class="treeview">
-			          	<a href="#">
-				            <i class="fa fa-files-o"></i>
-				            <span>Layout Options</span>
-				            <span class="pull-right-container">
-				              	<span class="label label-primary pull-right">4</span>
-				            </span>
-			          	</a>
-			          	<ul class="treeview-menu">
-				            <li><a href="#"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
-				            <li><a href="#"><i class="fa fa-circle-o"></i> Boxed</a></li>
-			          	</ul>
-			        </li>
-			        <li class="treeview">
-			          	<a href="#">
-			            	<i class="fa fa-table"></i>
-			            	<span>Tables</span>
-			            	<span class="pull-right-container">
-			              		<i class="fa fa-angle-left pull-right"></i>
-			            	</span>
-			          	</a>
-			          	<ul class="treeview-menu">
-				            <li><a href="#"><i class="fa fa-circle-o"></i> Simple tables</a></li>
-				            <li><a href="#"><i class="fa fa-circle-o"></i> Data tables</a></li>
-			          	</ul>
-			        </li>
 			        <li class="treeview">
 			          	<a href="#">
 				            <i class="fa fa-share"></i>
@@ -90,11 +64,10 @@
 				            <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
 			          	</ul>
 			        </li>
-
-			        <li class="header">LABELS</li>
-			        <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
-			        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
-			        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
+			        <li class="header">SOCIALES</li>
+			        <li><a href="<?php echo base_url()?>Admin/Asociales"><i class="fa fa-circle-o text-red"></i> <span>Redes Sociales</span></a></li>
+			        <li class="header">PORTADA</li>
+			        <li><a href="<?php echo base_url()?>Admin/Afotos"><i class="fa fa-circle-o text-red"></i> <span>Fotos Portada</span></a></li>
 		      	</ul>
 		    </section>
 		    <!-- /.sidebar -->

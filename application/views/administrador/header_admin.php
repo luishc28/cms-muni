@@ -5,17 +5,27 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<meta http-equiv="content-type" content="text/html"; charset="utf-8">
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>addons/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>addons/css/bootstrap.css">
 	
 	<!-- Font Awesome -->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>addons/administrador/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>addons/administrador/dist/css/AdminLTE.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>addons/administrador/dist/css/AdminLTE.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>addons/css/datatable.css">
   	<!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>addons/administrador/dist/css/skins/_all-skins.min.css">
 	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Rajdhani|Ek+Mukta" rel="stylesheet">
   	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
+	<script src="<?php echo base_url(); ?>/addons/administrador/js/jquery.min.js"></script>
+	<script src="<?php echo base_url(); ?>/addons/js/bootstrap.min.js"></script>
+	<script src="<?php echo base_url(); ?>/addons/administrador/js/fastclick.js"></script>
+	<script src="<?php echo base_url(); ?>/addons/administrador/dist/js/adminlte.min.js"></script>
+	<script src="<?php echo base_url(); ?>/addons/administrador/dist/js/demo.js"></script>
+	<script src="<?php echo base_url(); ?>/addons/js/jquery.dataTables.min.js"></script>
+	<script src="<?php echo base_url(); ?>/addons/js/dataTables.bootstrap.min.js"></script>
 
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
