@@ -19,7 +19,7 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
     
-    RewriteCond  $1 !^(index.php|addons)
+    RewriteCond  $1 !^(index.php|addons|upload)
 
     # Si el archivo/directorio no existe, redireccionamos
     RewriteRule ^(.*)$ /cms-muni/index.php?/$1 [L]

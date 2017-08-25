@@ -1,6 +1,6 @@
   <div id="slides">
   	<?php foreach ($slider as $slide) {
-  		echo "<img src=".base_url()."addons/img/fotos/".$slide->nombre_fotos.">";
+  		echo "<img src=".base_url()."uploads/imagenes/".$slide->nombre_fotos.">";
   	}
   	?>	
       <a href="#" class="slidesjs-previous slidesjs-navigation"><span class="glyphicon glyphicon-chevron-left"></span></a>

@@ -1,7 +1,7 @@
   	<div class="content-wrapper">
 		    <!-- Content Header (Page header) -->
 		    <section class="content-header">
-			    <h1>Menú - Fotos Portada</h1>
+			    <h1>Menú - Fotos</h1>
 			    <ol class="breadcrumb">
 			        <li> <a href="#"><i class="fa fa-dashboard"></i> Home</a> </li>
 			        <li> <a href="#">Examples</a> </li>
@@ -27,7 +27,8 @@
               <table class="table table-bordered" id="slider">
                 <thead>
                   <th style="width: 10px">ID</th>
-                  <th>Nombre</th>
+                  <th>Nombre Foto</th>
+                  <th>Url</th>
                   <th>Tipo</th>
                   <th>Estado</th>
                   <th>Operación</th>
@@ -45,7 +46,8 @@
                     <tr>
                       <td> <?php echo $value->id_fotos ?> </td>
                       <td> <?php echo $value->nombre_fotos ?> </td>
-                      <td> <?php echo $value->tipo_fotos ?> </td>
+                      <td> <?php echo $value->url_fotos ?> </td>
+                      <td> <?php echo $value->nombre_tipo ?> </td>
                       <td>
                       <?php echo anchor("Admin/Afotos/".$asd."/".$value->id_fotos,"$nomEstado", ['class'=>'btn btn-sm btn-primary']); ?>
                       </td>

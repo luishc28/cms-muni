@@ -3,7 +3,7 @@
           <!-- Formulario -->
           <div class="box">
           <?php if(!isset($record)){
-            echo form_open_multipart('Admin/Afotos/upload', ['class' => 'form-horizontal', 'method' =>'POST'] );
+            echo form_open_multipart('Admin/Afotos/guardar', ['class' => 'form-horizontal', 'method' =>'POST', 'enctype' => 'multipart/form-data']);
             echo '<div class="box-header with-border">';
             echo '<h3 class="box-title">Agregar Fotos</h3>';
             echo '</div>';
@@ -16,32 +16,44 @@
           ?>
               <div class="box-body">
                 <div class="col-lg-6">
-               <input type="hidden" name="id" value ="<?php if (isset($record)) { echo $record->id_fotos; } else { echo "0";}?>">
                   <div class="form-group">
-                    <?php echo form_label('Tipo Foto', 'txtNomTipo',['class'=>'control-label col-lg-4']); ?>
+                    <input type="hidden" name="id" value ="<?php if (isset($record)) { echo $record->id_fotos; } else { echo "0";}?>">
+                    <?php echo form_label('Foto', 'txtNomFot',['class'=>'control-label col-lg-4']); ?>
                     <div class="col-lg-8">
-                    <?php $fotos = array('' => 'Seleccione Tipo Foto', 'Principal' => 'Seccion Principal',
-                        'Vertical' => 'Seccion Vertical', 'Horizontal' => 'Seccion Horizontal', 
-                        'Alcalde' => 'Seccion Alcalde', 'Iconos-Superior' => 'Seccion Iconos Superiores'); ?>
-                    <?php echo form_dropdown('txtNomTipo',$fotos, set_value('txtNomTipo',isset($record)?$record->tipo_foto : null),['class' => 'form-control']);  ?>
+                    <?php echo form_input(['class'=>'form-control','name'=>'txtNomFot', 'type' => 'file','id'=>'txtNomFot','value'=>set_value('txtNomFot',isset($record)?$record->nombre_fotos : null)]);?>  
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-6">
-                <?php echo form_error('txtNomTipo'); ?>
+                <?php echo form_error('txtNomFot'); ?>
                 </div>                
               </div>
+
               <div class="box-body">
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <?php echo form_label('Cargar Foto', 'txtNomFoto',['class'=>'control-label col-lg-4']); ?>
+                    <?php echo form_label('Url', 'txtUrlFot',['class'=>'control-label col-lg-4']); ?>
                     <div class="col-lg-8">
-                      <?php echo form_upload("txtNomFoto"); ?>
+                    <?php echo form_input(['class'=>'form-control','name'=>'txtUrlFot','id'=>'txtUrlFot','placeholder'=>'Ingrese un url para su foto','value'=>set_value('txtUrlFot',isset($record)?$record->url_fotos : null)]);?>                      
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-6">
-                <?php echo $error_image; ?>
+                <?php echo form_error('txtUrlFot'); ?>
+                </div>
+              </div>
+
+              <div class="box-body">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <?php echo form_label('Tipo', 'txtTipFot',['class'=>'control-label col-lg-4']); ?>
+                    <div class="col-lg-8">
+                    <?php echo form_dropdown('txtTipFot',$tipo_fotos, set_value('txtTipFot',isset($record)?$record->id_tipo : null),['class' => 'form-control']);  ?>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                <?php echo form_error('txtTipFot'); ?>
                 </div>                
               </div>              
               <div class="box-footer" align="center">
